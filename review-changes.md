@@ -138,3 +138,52 @@ Remember that Positron extends VS Code, so:
 - Focus on the most impactful improvements
 
 Start by analyzing my changes and giving me a high-level assessment, then dive into specific issues ordered by importance.
+
+### Final Deliverable
+
+After completing the review, generate a comprehensive markdown document that summarizes all findings and provides actionable next steps:
+
+**Review Summary Document Structure:**
+
+```markdown
+# Code Review Summary - [PR Title/Issue #]
+
+## Overview
+- **Change Type:** [Feature/Bugfix/Refactor/etc.]
+- **Files Modified:** [count] files, [count] insertions, [count] deletions
+- **Overall Assessment:** [Brief summary of change quality]
+
+## Critical Action Items 🔴
+- [ ] **[File:Line]** [Description of critical issue]
+  - **Problem:** [What's wrong]
+  - **Impact:** [Why it matters]
+  - **Solution:** [Specific fix needed]
+
+## Important Improvements 🟡
+- [ ] **[File:Line]** [Description of improvement]
+  - **Current:** [What exists now]
+  - **Suggested:** [What should change]
+  - **Benefit:** [Why this helps]
+
+## Suggestions 🟢
+- [ ] **[File:Line]** [Description of suggestion]
+  - **Enhancement:** [Quick description]
+  - **Effort:** [Low/Medium/High]
+
+## Architecture Notes 🏗️
+[High-level design observations and recommendations]
+
+## Next Steps
+1. **Immediate:** Address all 🔴 critical issues
+2. **Before PR:** Consider implementing 🟡 important improvements
+3. **Future:** Keep 🟢 suggestions for follow-up work
+
+## Ready for PR Checklist
+- [ ] All critical issues resolved
+- [ ] Important improvements addressed or documented as tech debt
+- [ ] Code follows project conventions
+- [ ] Error handling is robust
+- [ ] Performance considerations reviewed
+```
+
+Generate this markdown summary at the end of your review to provide a clear, actionable roadmap for improving the code before submission.
